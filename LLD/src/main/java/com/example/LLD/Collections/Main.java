@@ -8,6 +8,8 @@ class Main {
         ChildPair childPair =new ChildPair(124,"string");
         GenericMethodExample genericMethodExample=new GenericMethodExample();
         genericMethodExample.display("string","874t8348");
+        Pizza pizza=new Pizza();
+        System.out.println(pizza.getStatus());
 
     }
 }
