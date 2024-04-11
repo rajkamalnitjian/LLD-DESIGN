@@ -8,6 +8,9 @@ import java.util.concurrent.ThreadFactory;
 //Seperate memory and thread provided to each program;
 
 
+Key 1:-
+
+
 Note:-
 In Java, the suspend(), resume(), and stop() methods are used to control the execution of threads.
 
@@ -21,6 +24,17 @@ Stop: permanently stops the execution of a thread.
 The suspend() and resume() methods are deprecated in Java 1.1 and should not be used. The stop() method is also deprecated in Java 1.5 and should not be used.
 There are several reasons why these methods are deprecated. One reason is that they can cause problems with other threads and with the overall stability of the program. Another reason is that they are not necessary. There are other ways to control the execution of threads that are more reliable and efficient.
 Here are some alternatives to using the suspend(), resume(), and stop() methods
+
+
+Key 2:--
+
+Join() method keep current thread to wait until it finishes their work.
+
+Key 3:
+Demon Thread:-A daemon thread is a thread that runs in the background and does not prevent the Java Virtual Machine (JVM) from exiting when all non-daemon threads in Java have been completed.
+
+        th1.setDaemon(true);
+
  */
 class MultiThreading0 implements  Runnable {
     @Override
@@ -74,6 +88,5 @@ public class ThreadLifeCycle {
         th1.start();
         th2.start();
         th3.start();
-
     }
 }
