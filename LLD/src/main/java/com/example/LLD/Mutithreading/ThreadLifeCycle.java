@@ -7,6 +7,20 @@ import java.util.concurrent.ThreadFactory;
 //At the time of execution jvm start new process.
 //Seperate memory and thread provided to each program;
 
+
+Note:-
+In Java, the suspend(), resume(), and stop() methods are used to control the execution of threads.
+
+Suspend: temporarily stops the execution of a thread. The thread can be resumed using the resume() method.
+Resume: resumes the execution of a suspended thread.
+Stop: permanently stops the execution of a thread.
+
+
+*  these above three methods doesn't release Monitor lock on shared resource.
+
+The suspend() and resume() methods are deprecated in Java 1.1 and should not be used. The stop() method is also deprecated in Java 1.5 and should not be used.
+There are several reasons why these methods are deprecated. One reason is that they can cause problems with other threads and with the overall stability of the program. Another reason is that they are not necessary. There are other ways to control the execution of threads that are more reliable and efficient.
+Here are some alternatives to using the suspend(), resume(), and stop() methods
  */
 class MultiThreading0 implements  Runnable {
     @Override
